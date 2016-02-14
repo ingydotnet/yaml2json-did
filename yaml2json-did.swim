@@ -1,0 +1,14 @@
+dids/yaml2json
+==============
+
+Docker ID image for yaml2json
+
+= Synopsis
+
+  cat file.yaml | did run yaml2json
+
+= Copyright & License
+
+Copyright 2016. Ingy döt Net.
+
+The MIT License (MIT)
