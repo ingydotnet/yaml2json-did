@@ -13,6 +13,7 @@ entry:
   volume: []
   env: []
 
-  run: -i
+  run: --rm
+    --interactive
     --entrypoint /yaml2json
     dids/yaml2json

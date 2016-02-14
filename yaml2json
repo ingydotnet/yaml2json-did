@@ -3,7 +3,15 @@
 fs = require 'fs'
 yaml = require 'js-yaml'
 
+args = process.argv.slice 2
+pretty = args[0] == '--pretty'
+
 input = fs.readFileSync('/dev/stdin').toString()
 data = yaml.load input
-json = JSON.stringify data, null, 2
+
+if pretty
+  json = JSON.stringify data, null, 2
+else
+  json = JSON.stringify data
+
 process.stdout.write json + "\n"
